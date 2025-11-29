@@ -200,7 +200,7 @@ def main():
                 legend_title="Curve",
                 height=600,
             )
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width="stretch")
 
         # ---------- Single strategy vs benchmarks ----------
         else:
@@ -271,7 +271,7 @@ def main():
                 legend_title="Curve",
                 height=600,
             )
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width="stretch")
 
     # ======================================================================
     #  METRICS
@@ -318,7 +318,7 @@ def main():
                 title=f"{metric_choice} Comparison",
                 is_percent=("%" in metric_col),
             )
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width="stretch")
 
     # ======================================================================
     #  TRADE SIGNALS            
@@ -449,7 +449,7 @@ def main():
                 height=600,
             )
 
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width="stretch")
 
 
 
