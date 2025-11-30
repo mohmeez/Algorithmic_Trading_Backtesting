@@ -66,8 +66,7 @@ def main():
 
 
     # ========== LOAD DATA & RUN STRATEGIES ==========
-    # (You can wrap this in @st.cache_data once everything is stable)
-
+    @st.cache_data(show_spinner=True, ttl=600)
     def get_results(ticker, start, end, interval, benchmark_mode, benchmark_ticker):
         return run_all(ticker=ticker, start=start, end=end, interval=interval, benchmark_mode=benchmark_mode, benchmark_ticker=benchmark_ticker)
 
